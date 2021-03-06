@@ -5,9 +5,18 @@ import {Link} from 'react-router-dom'
 import athlete from '../img/athlete-small.png'
 import theracer from '../img/theracer-small.png'
 import goodtimes from '../img/goodtimes-small.png'
+//ANIMATIONS 
+import {motion} from 'framer-motion'
+import {pageAnimation} from '../animation'
+
 const OurWork = () => {
     return (
-        <Work>
+        <Work
+         exit="exit" 
+        variants={pageAnimation} 
+        initial="hidden" 
+        animate="show"
+        style={{background: "#fff"}}>
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line">
@@ -43,7 +52,7 @@ const OurWork = () => {
     )
 }
 
-const Work = styled.div`
+const Work = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     h2 
