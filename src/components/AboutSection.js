@@ -1,6 +1,7 @@
 import React from 'react'
 import home1 from '../img/home1.png';
 import {titleAnim, fade, photoAnim} from '../animation'
+import Wave from './Wave'
 
 import {About, Description, Image, Hide} from '../styles';
 //FRAMER MOTION 
@@ -32,6 +33,7 @@ const AboutSection = () => {
             <Image>
                 <motion.img variants={photoAnim} src={home1} alt=""/>
             </Image>
+            <Wave/>
         </About>
     )
 }

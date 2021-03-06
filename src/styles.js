@@ -13,6 +13,7 @@ export const About = styled.div`
 
 
 export const Image = styled.div`
+    z-index: 2;
     flex: 1;
     overflow: hidden;
     img 
@@ -30,7 +31,7 @@ export const Hide = styled.div`
 export const Description = styled.div`
     flex: 1;
     padding-right: 5rem;
-    
+    z-index: 2;
     h2 
     {
         font-weight: lighter;
